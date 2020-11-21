@@ -3,7 +3,7 @@ name: Update cms/master
 on:
   push:
     branches:
-      - main
+      - testo1
 
 jobs:
   update-cms-master:
