@@ -3,7 +3,7 @@ name: Java CI
 on: [pull_request]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
 
     steps:
@@ -15,6 +15,7 @@ jobs:
       - name: Build with Maven
         run: mvn -B package --file pom.xml
   automerge:
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: automerge
