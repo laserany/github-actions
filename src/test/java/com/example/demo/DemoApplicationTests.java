@@ -12,4 +12,9 @@ class DemoApplicationTests {
 	void contextLoads() {
 	}
 
+	@Test
+	void testo() {
+		assertFalse(true);
+	}
+
 }
